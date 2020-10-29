@@ -129,6 +129,7 @@ googlemail.com,imap.googlemail.com,993,smtp.googlemail.com,587
 gordon.edu,outlook.office365.com,993,smtp.office365.com,587
 grrlz.net,mail.autistici.org,993,smtp.autistici.org,465
 hacari.*,mail.autistici.org,993,smtp.autistici.org,465
+harmonycloud.cn,imap.qiye.aliyun.com,993,smtp.qiye.aliyun.com,465
 helsinki.fi,outlook.office365.com,993,smtp.helsinki.fi,587
 hhu.de,mail.hhu.de,993,mail.hhu.de,465
 hitler.rocks,mail.cock.li,993,mail.cock.li,587
