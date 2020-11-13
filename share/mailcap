@@ -10,3 +10,4 @@ application/pgp-keys; gpg --import '%s'; copiousoutput;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document; lowriter %s >/dev/null 2>&1; copiousoutput;
 application/vnd.openxmlformats-officedocument.presentationml.presentation; loimpress %s >/dev/null 2>&1; copiousoutput;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; localc %s >/dev/null 2>&1; copiousoutput;
+application/excel; localc %s >/dev/null 2>&1; copiousoutput;
