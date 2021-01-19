@@ -100,6 +100,8 @@ else
 	done || echo "error $arg"; done)"
 fi
 
+pkill -RTMIN+12 -x dwmblocks # notify mailbox
+
 for account in $tosync; do
 	case $account in
 		Channel*) syncandnotify imap "${account##* }" & ;;
@@ -109,6 +111,8 @@ for account in $tosync; do
 done
 
 wait
+
+pkill -RTMIN+12 -x dwmblocks # notify mailbox
 
 notmuch new --quiet
 
