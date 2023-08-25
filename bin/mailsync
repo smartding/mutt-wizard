@@ -60,9 +60,7 @@ syncandnotify() {
 		pop) mpop -q "$2" ;;
 	esac
 	new=$(find\
-		"$HOME/.local/share/mail/$2/"[Ii][Nn][Bb][Oo][Xx]/new/ \
-		"$HOME/.local/share/mail/$2/"[Ii][Nn][Bb][Oo][Xx]/cur/ \
-		-type f -newer "$lastrun" 2> /dev/null)
+		"$HOME/.local/share/mail/$2/"[Ii][Nn][Bb][Oo][Xx]/new/ -type f 2> /dev/null)
 	newcount=$(echo "$new" | sed '/^\s*$/d' | wc -l)
 	case 1 in
 		$((newcount > 5)) )
